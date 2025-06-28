@@ -24,3 +24,7 @@ Data Relish is an open-source, self-hosted PHP + MySQL analytics system for trac
 - `update_countries.php` – Script for updating country data from IP addresses
 
   This project is still in development, use this code at your own risk. Please feel free to contribute!
+
+## Live Example
+
+I am using this on my free plugin website, I don't have a problem sharing this dashboard as there isn't any real sensitive information (in this case) : https://zerovst.com/admin/data/stats.php?pass=jabberwocky!20o2
