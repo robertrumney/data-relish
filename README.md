@@ -4,9 +4,9 @@ Data Relish is an open-source, self-hosted PHP + MySQL analytics system for trac
 
 ## Features
 
-- Track visits and custom events with a single PHP function
-- Dashboard with unique visitors per day, event breakdowns, and top countries using Chart.js
-- "Enrich Country Data" button resolves IPs to countries directly from the dashboard
+- Track visits and custom events with a single PHP function.
+- Dashboard with unique visitors per day, event breakdowns, and top countries using Chart.js.
+- Seperate parallel routine for translating I.P. addresses into countries.
 
 ## Setup
 
@@ -29,3 +29,5 @@ Data Relish is an open-source, self-hosted PHP + MySQL analytics system for trac
 
 I am using this on my free plugin website, I don't have a problem sharing this dashboard as there isn't any real sensitive information in this case.
 https://zerovst.com/admin/data/stats.php?pass=jabberwocky!20o2
+
+![Example 1](example/example1.png)
