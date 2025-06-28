@@ -32,4 +32,4 @@ https://zerovst.com/admin/data/stats.php?pass=jabberwocky!20o2
 
 ![Example 1](example/example1.png)
 ![Example 2](example/example2.png)
-![Example 3](example/example3.png)
+![Example 3](example/example3.5.png)
