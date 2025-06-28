@@ -1,0 +1,9 @@
+CREATE TABLE `analytics_events` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `event_type` VARCHAR(32) NOT NULL,
+    `target` VARCHAR(128) NOT NULL,
+    `user_agent` VARCHAR(255) NOT NULL,
+    `ip_address` VARCHAR(45) NOT NULL,
+    `country` VARCHAR(128) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
