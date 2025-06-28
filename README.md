@@ -1,13 +1,12 @@
 # Data Relish
 
-Data Relish is an open-source, self-hosted PHP + MySQL analytics system for tracking and visualizing web activity. It provides simple event logging and a clean dashboard with charts, all without external dependencies or vendor lock-in.
+Data Relish is an open-source, self-hosted PHP + MySQL analytics system for tracking and visualizing web activity. It provides simple event logging, I.P. metrics, visitt, users & activity.
 
 ## Features
 
 - Track visits and custom events with a single PHP function
 - Dashboard with unique visitors per day, event breakdowns, and top countries using Chart.js
 - "Enrich Country Data" button resolves IPs to countries directly from the dashboard
-- No built-in branding or forced reporting
 
 ## Setup
 
