@@ -2,7 +2,9 @@
 
   // Database connection
   $mysqli = new mysqli('DB_HOST', 'DB_USER', 'DB_PASS', 'DB_NAME');
-  if ($mysqli->connect_error) {
+
+  if ($mysqli->connect_error) 
+  {
       die('Connection failed: ' . $mysqli->connect_error);
   }
   
@@ -10,7 +12,8 @@
   error_reporting(E_ALL);
   
   // Helper function to fetch country for an IP
-  function get_country_by_ip($ip) {
+  function get_country_by_ip($ip) 
+  {
       $url = "http://ip-api.com/json/" . urlencode($ip);
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_URL, $url);
@@ -27,11 +30,14 @@
   
   // Fetch all rows where country is missing
   $res = $mysqli->query("SELECT id, ip_address FROM analytics_events WHERE country IS NULL OR country = '' OR country = 'unknown'");
-  if (!$res) {
+
+  if (!$res) 
+  {
       die("Query failed: " . $mysqli->error);
   }
   
-  while ($row = $res->fetch_assoc()) {
+  while ($row = $res->fetch_assoc()) 
+  {
       $id = (int)$row['id'];
       $ip = $row['ip_address'];
       $country = get_country_by_ip($ip);
@@ -39,7 +45,9 @@
           $country_esc = $mysqli->real_escape_string($country);
           $mysqli->query("UPDATE analytics_events SET country='$country_esc' WHERE id=$id");
           echo "Updated $ip to $country<br>";
-      } else {
+      }
+      else 
+      {
           echo "No country info for $ip<br>";
       }
   }
